@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.css";
 import Walmart from "../../assets/walmart.png";
 import Microsoft from "../../assets/microsoft.png";
 import Adobe from "../../assets/adobe.png";
 import LinkedIn from "../../assets/facebook-icon.png";
 import GitHub from "../../assets/twitter.png";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_poxtixq",
+        "template_nqlvy9h",
+        form.current,
+        "PG2ZPBqxErFa9vWg8"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert("Email Sent!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="contactPage">
       <div id="clients">
@@ -27,9 +52,19 @@ const Contact = () => {
           Having 2 Years Working Experience in Java Backend and 1 Year Working
           Experience in React.js!!
         </span>
-        <form className="contactForm">
-          <input type="text" class="name" placeholder="Your Name" />
-          <input type="email" class="email" placeholder="Your Email" />
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            class="name"
+            placeholder="Your Name"
+            name="from_name"
+          />
+          <input
+            type="email"
+            class="email"
+            placeholder="Your Email"
+            name="from_email"
+          />
           <textarea
             className="message"
             name="message"
