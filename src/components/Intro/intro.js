@@ -1,10 +1,7 @@
 import React from "react";
 import "./intro.css";
-import imageBg from "../../assets/image.png";
 import btnImage from "../../assets/hireme.png";
-import imgAmiya from "../../assets/Amiya.jpg";
-import imgAmiyaWhiteBg from "../../assets/Amiya Passport Size.png";
-import { Link } from "react-scroll";
+import imgAmiya from "../../assets/Amiya-Image.png";
 
 const Intro = () => {
   return (
@@ -17,17 +14,20 @@ const Intro = () => {
           Java Full Stack Developer
         </span>
         <p class="introPara">
-          Having 2 Years Working Experience in Java Backend and <br /> 1 Year
-          Working Experience in React.js!!
+          Having in-depth knowledge of <span class="introName">Java</span> and{" "}
+          <span class="introName">React.js</span> Technology <br /> and total
+          experience of <span class="introName">2 Years</span> in the software
+          industry. <br /> Please click on the below "Hire Me" button to find
+          out <br /> how I might contribute and add value to your next project.
         </p>
-        <Link>
+        <a href={`mailto:arrout29@gmail.com`}>
           <button class="btn">
             <img src={btnImage} alt="Hire Me" className="btnImg" />
             Hire Me
           </button>
-        </Link>
+        </a>
       </div>
-      <img src={imageBg} alt="Profile" class="bgImg" />
+      <img src={imgAmiya} alt="Profile" class="bgImg" />
     </section>
   );
 };

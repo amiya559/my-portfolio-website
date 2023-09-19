@@ -41,6 +41,11 @@
   border-radius: 2rem;
 }
 
+.desktopMenuButton:hover {
+  background-color: yellowgreen;
+  transition: 1s;
+}
+
 .desktopMenuImg {
   object-fit: cover;
   height: 1rem;
