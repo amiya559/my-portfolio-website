@@ -11,14 +11,18 @@ const Skills = () => {
       <span class="skillDesc">
         I am having 2 YoE in
         <span class="introName"> Java Backend</span> and 1 YoE in
-        <span class="introName"> React.js</span>. Currently working in one
-        of the<span class="introName"> Big 4</span> firm
+        <span class="introName"> React.js</span>. Currently working in one of
+        the<span class="introName"> Big 4</span> firm
         <span class="introName"> Ernst & Young (EY)</span> as
         <span class="introName"> Java Consultant</span>.
       </span>
       <div class="skillBars">
         <div class="skillBar">
-          <img src={javaIcon} alt="Java Backend Development" class="skillBarImg" />
+          <img
+            src={javaIcon}
+            alt="Java Backend Development"
+            class="skillBarImg"
+          />
           <div class="skillBarText">
             <h2>Java Backend Development</h2>
             <p>
@@ -27,7 +31,11 @@ const Skills = () => {
           </div>
         </div>
         <div class="skillBar">
-          <img src={reactIcon} alt="React Frontend Development" class="skillBarImg" />
+          <img
+            src={reactIcon}
+            alt="React Frontend Development"
+            class="skillBarImg"
+          />
           <div class="skillBarText">
             <h2>React Frontend Development</h2>
             <p>React, Javascript, React Hooks, React Redux, HTML, CSS</p>
@@ -37,7 +45,7 @@ const Skills = () => {
           <img src={otherIcon} alt="Other" class="skillBarImg" />
           <div class="skillBarText">
             <h2>Other</h2>
-            <p>AWS, Apache Kafka, SQL, Camunda</p>
+            <p>AWS, Apache Kafka, SQL, Camunda, Technical Writing</p>
           </div>
         </div>
       </div>

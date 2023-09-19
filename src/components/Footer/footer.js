@@ -4,7 +4,8 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      Copyright &#169; 2023, Amiya Rout. All rights reserved.
+      © {new Date().getFullYear()} All Rights Reserved | Made with ❤️ by Amiya
+      Rout
     </footer>
   );
 };

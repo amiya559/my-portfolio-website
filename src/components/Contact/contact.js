@@ -1,8 +1,5 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import Walmart from "../../assets/walmart.png";
-import Microsoft from "../../assets/microsoft.png";
-import Adobe from "../../assets/adobe.png";
 import LinkedIn from "../../assets/facebook-icon.png";
 import GitHub from "../../assets/twitter.png";
 import emailjs from "@emailjs/browser";
@@ -34,18 +31,6 @@ const Contact = () => {
 
   return (
     <section id="contactPage">
-      <div id="clients">
-        <h1 class="contactPageTitle">My Clients</h1>
-        <p class="clientDesc">
-          Having 2 Years Working Experience in Java Backend and 1 Year Working
-          Experience in React.js!!
-        </p>
-        <div class="clientImgs">
-          <img src={Walmart} alt="Walmart" class="clientImg" />
-          <img src={Microsoft} alt="Microsoft" class="clientImg" />
-          <img src={Adobe} alt="Adobe" class="clientImg" />
-        </div>
-      </div>
       <div id="contact">
         <h1 className="contactPageTitle">Contact Me</h1>
         <span class="contactDesc">
