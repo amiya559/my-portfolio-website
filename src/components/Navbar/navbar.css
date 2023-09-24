@@ -22,6 +22,8 @@
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .desktopMenuListItem:hover {

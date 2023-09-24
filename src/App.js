@@ -1,5 +1,6 @@
 import Achievements from "./components/Achievements/achievements";
 import Contact from "./components/Contact/contact";
+import ContactMe from "./components/ContactMe/contactMe";
 import Experience from "./components/Experience/experience";
 import Footer from "./components/Footer/footer";
 import Intro from "./components/Intro/intro";
@@ -14,7 +15,7 @@ function App() {
       <Skills />
       <Experience />
       <Achievements />
-      <Contact />
+      <ContactMe />
       <Footer />
     </div>
   );

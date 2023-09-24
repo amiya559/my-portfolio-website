@@ -16,7 +16,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={500}
+          duration={50}
           className="desktopMenuListItem"
         >
           Home
@@ -27,7 +27,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={50}
           className="desktopMenuListItem"
         >
           Skills
@@ -38,7 +38,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-80}
-          duration={500}
+          duration={50}
           className="desktopMenuListItem"
         >
           Experience
@@ -48,8 +48,8 @@ const Navbar = () => {
           to="achievements"
           spy={true}
           smooth={true}
-          offset={-50}
-          duration={500}
+          offset={-70}
+          duration={50}
           className="desktopMenuListItem"
         >
           Achievements

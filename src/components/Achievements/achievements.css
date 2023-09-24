@@ -5,9 +5,8 @@
   padding: 0 1rem;
 }
 
-.skillTitle {
+.achievement-text {
   text-align: center;
-  margin: 1rem 0;
   font-size: 3rem;
 }
 
@@ -16,10 +15,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 .my-achievement {
-  background: rgb(153, 207, 144);
+  background: rgb(149, 155, 164);
   margin-bottom: 10px;
   position: relative;
   width: 280px;

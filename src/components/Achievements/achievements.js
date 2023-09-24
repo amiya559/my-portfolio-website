@@ -5,7 +5,7 @@ import { achievements } from "../../data/achievements";
 const Achievements = () => {
   return (
     <section id="achievements">
-      <h2 class="skillTitle">Achievements</h2>
+      <h2 class="achievement-text">Achievements</h2>
 
       <div class="achievement-row">
         {achievements &&
@@ -22,10 +22,6 @@ const Achievements = () => {
               <p className="achievement-desc">
                 {achievement.achievement_description}
               </p>
-
-              <div className="shadow-icon">
-                <i className={achievement.shadow_icon}></i>
-              </div>
             </div>
           ))}
       </div>
