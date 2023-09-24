@@ -6,6 +6,11 @@ import { ColorRing } from "react-loader-spinner";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { profileLinks } from "../../data/profileLinks";
+import {
+  EmailJS_SERVICE_ID,
+  EmailJS_TEMPLATE_ID,
+  EmailJS_PUBLIC_KEY,
+} from "../../utils/constants";
 
 const ContactMe = (e) => {
   const form = useRef();
@@ -42,12 +47,9 @@ const ContactMe = (e) => {
     setIsFormSubmitting(true);
 
     emailjs
-      .sendForm(
-        "service_poxtixq",
-        "template_nqlvy9h",
-        form.current,
-        "PG2ZPBqxErFa9vWg8"
-      )
+      .sendForm({ EmailJS_SERVICE_ID }, { EmailJS_TEMPLATE_ID }, form.current, {
+        EmailJS_PUBLIC_KEY,
+      })
       .then(
         (result) => {
           resetData();
