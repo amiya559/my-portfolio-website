@@ -47,9 +47,12 @@ const ContactMe = (e) => {
     setIsFormSubmitting(true);
 
     emailjs
-      .sendForm({ EmailJS_SERVICE_ID }, { EmailJS_TEMPLATE_ID }, form.current, {
-        EmailJS_PUBLIC_KEY,
-      })
+      .sendForm(
+        "service_poxtixq",
+        "template_nqlvy9h",
+        form.current,
+        "PG2ZPBqxErFa9vWg8"
+      )
       .then(
         (result) => {
           resetData();

@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div class="deskTopMenu">
+      <div className="deskTopMenu">
         <Link
           activeClass="active"
           to="intro"
