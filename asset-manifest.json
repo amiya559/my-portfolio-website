@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-website/static/css/main.6185c36c.css",
+    "main.js": "/my-portfolio-website/static/js/main.1b74eef2.js",
+    "static/media/Amiya-Image.png": "/my-portfolio-website/static/media/Amiya-Image.d591ee061125336303cf.png",
+    "static/media/react.png": "/my-portfolio-website/static/media/react.35639ed930462bfcd544.png",
+    "static/media/java.png": "/my-portfolio-website/static/media/java.aaaa73f637215f4d6333.png",
+    "static/media/other.png": "/my-portfolio-website/static/media/other.9037c951ec79db4e97c3.png",
+    "static/media/ey-logo.png": "/my-portfolio-website/static/media/ey-logo.54a294e793a6b6efc461.png",
+    "index.html": "/my-portfolio-website/index.html",
+    "main.6185c36c.css.map": "/my-portfolio-website/static/css/main.6185c36c.css.map",
+    "main.1b74eef2.js.map": "/my-portfolio-website/static/js/main.1b74eef2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6185c36c.css",
+    "static/js/main.1b74eef2.js"
+  ]
+}
