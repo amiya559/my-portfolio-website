@@ -10,7 +10,7 @@ import ey from "../../assets/ey-logo.png";
 import amdocs from "../../assets/amdocs-logo.png";
 import globallogic from "../../assets/globallogic.png";
 
-const Experience = () => {
+const Experience = (props) => {
   const formatedCompanyLogos = {
     ey,
     amdocs,
@@ -66,15 +66,16 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <h2 class="worksTitle">Work Experience & Education</h2>
+      <h2 className="worksTitle">Work Experience & Education</h2>
       <div className="experience-container">
+      {/* export to new component */}
         <VerticalTimeline>
-          {renderJobExperience()}
+          {renderJobExperience()} 
           {renderEducation()}
         </VerticalTimeline>
       </div>
     </section>
-  );
+  );  
 };
 
 export default Experience;

@@ -48,18 +48,16 @@ const ContactMe = (e) => {
 
     emailjs
       .sendForm(
-        "service_poxtixq",
-        "template_nqlvy9h",
+        EmailJS_SERVICE_ID,
+        EmailJS_TEMPLATE_ID,
         form.current,
-        "PG2ZPBqxErFa9vWg8"
+        EmailJS_PUBLIC_KEY
       )
-      .then(
-        (result) => {
+      .then((result) => {
           resetData();
           setIsFormSubmitting(false);
           toast.success("Email sent successfully!");
-        },
-        (error) => {
+        },(error) => {
           toast.error("Error sending email, please try again later!");
           setIsFormSubmitting(false);
         }
