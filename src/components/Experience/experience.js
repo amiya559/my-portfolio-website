@@ -66,7 +66,7 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <h2 class="worksTitle">Work Experience & Education</h2>
+      <h2 className="worksTitle">Work Experience & Education</h2>
       <div className="experience-container">
         <VerticalTimeline>
           {renderJobExperience()}

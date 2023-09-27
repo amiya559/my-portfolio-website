@@ -1,8 +1,6 @@
 .reachme-container {
-  min-height: calc(100vh - 4rem);
-  color: var(--color-info-light);
   width: 100%;
-  padding: 0 40px;
+  padding: 80px 40px;
   position: relative;
   margin: auto;
 }

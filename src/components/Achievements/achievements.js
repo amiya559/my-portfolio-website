@@ -5,9 +5,9 @@ import { achievements } from "../../data/achievements";
 const Achievements = () => {
   return (
     <section id="achievements">
-      <h2 class="achievement-text">Achievements</h2>
+      <h2 className="achievement-text">Achievements</h2>
 
-      <div class="achievement-row">
+      <div className="achievement-row">
         {achievements &&
           achievements.map((achievement) => (
             <div

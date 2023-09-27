@@ -7,6 +7,15 @@ import contactImg from "../../assets/contact.png";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  function contactMeOnClickFunction() {
+    return () => {
+      document.getElementById("contact").scrollIntoView({
+        behavior: "smooth",
+        offset: -50,
+      });
+    };
+  }
+
   return (
     <nav className="navbar">
       <div className="deskTopMenu">
@@ -48,7 +57,7 @@ const Navbar = () => {
           to="achievements"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={50}
           className="desktopMenuListItem"
         >
@@ -56,14 +65,10 @@ const Navbar = () => {
         </Link>
       </div>
       <button
-        class="desktopMenuButton"
-        onClick={() => {
-          document.getElementById("contact").scrollIntoView({
-            behavior: "smooth",
-          });
-        }}
+        className="desktopMenuButton"
+        onClick={contactMeOnClickFunction()}
       >
-        <img src={contactImg} alt="contactImg" class="desktopMenuImg" />
+        <img src={contactImg} alt="contactImg" className="desktopMenuImg" />
         Contact Me
       </button>
 
@@ -74,7 +79,7 @@ const Navbar = () => {
         onClick={() => setShowMenu(!showMenu)}
       />
 
-      <div class="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
+      <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
         <Link
           activeClass="active"
           to="intro"

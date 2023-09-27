@@ -48,10 +48,10 @@ const ContactMe = (e) => {
 
     emailjs
       .sendForm(
-        "service_poxtixq",
-        "template_nqlvy9h",
+        EmailJS_SERVICE_ID,
+        EmailJS_TEMPLATE_ID,
         form.current,
-        "PG2ZPBqxErFa9vWg8"
+        EmailJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -175,7 +175,7 @@ const ContactMe = (e) => {
         </div>
       </div>
 
-      <div class="profile-links-container" data-aos-duration="1800">
+      <div className="profile-links-container" data-aos-duration="1800">
         <ul>
           <li>
             {profileLinks &&

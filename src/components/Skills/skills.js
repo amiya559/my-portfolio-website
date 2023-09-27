@@ -7,43 +7,43 @@ import otherIcon from "../../assets/other.png";
 const Skills = () => {
   return (
     <section id="skills">
-      <span class="skillTitle">What I Do?</span>
-      <span class="skillDesc">
+      <span className="skillTitle">What I Do?</span>
+      <span className="skillDesc">
         I am having 2 YoE in
-        <span class="introName"> Java Backend</span> and 1 YoE in
-        <span class="introName"> React.js</span>. Currently working in one of
-        the<span class="introName"> Big 4</span> firm
-        <span class="introName"> Ernst & Young (EY)</span> as
-        <span class="introName"> Java Consultant</span>.
+        <span className="introName"> Java Backend</span> and 1 YoE in
+        <span className="introName"> React.js</span>. Currently working in one
+        of the<span className="introName"> Big 4</span> firm
+        <span className="introName"> Ernst & Young (EY)</span> as
+        <span className="introName"> Java Consultant</span>.
       </span>
-      <div class="skillBars">
-        <div class="skillBar">
+      <div className="skillBars">
+        <div className="skillBar">
           <img
             src={javaIcon}
             alt="Java Backend Development"
-            class="skillBarImg"
+            className="skillBarImg"
           />
-          <div class="skillBarText">
+          <div className="skillBarText">
             <h2>Java Backend Development</h2>
             <p>
               Java, Spring Boot, Microservices, Spring Cloud, JUnit & Mockito
             </p>
           </div>
         </div>
-        <div class="skillBar">
+        <div className="skillBar">
           <img
             src={reactIcon}
             alt="React Frontend Development"
-            class="skillBarImg"
+            className="skillBarImg"
           />
-          <div class="skillBarText">
+          <div className="skillBarText">
             <h2>React Frontend Development</h2>
             <p>React, Javascript, React Hooks, React Redux, HTML, CSS</p>
           </div>
         </div>
-        <div class="skillBar">
-          <img src={otherIcon} alt="Other" class="skillBarImg" />
-          <div class="skillBarText">
+        <div className="skillBar">
+          <img src={otherIcon} alt="Other" className="skillBarImg" />
+          <div className="skillBarText">
             <h2>Other</h2>
             <p>AWS, Apache Kafka, SQL, Camunda, Technical Writing</p>
           </div>
